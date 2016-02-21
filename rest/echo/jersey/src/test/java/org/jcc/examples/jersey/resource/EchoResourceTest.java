@@ -2,7 +2,7 @@ package org.jcc.examples.jersey.resource;
 
 import org.glassfish.jersey.test.JerseyTest;
 import org.jcc.examples.jersey.application.EchoApplication;
-import org.jcc.examples.jersey.model.Echo;
+import org.jcc.examples.echo.model.Echo;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -41,6 +41,7 @@ public class EchoResourceTest extends JerseyTest {
         Invocation.Builder request = webTarget.request();
         Response response = request.get();
         Echo echo = response.readEntity(Echo.class);
+        Assert.assertNotNull(echo);
         Assert.assertEquals("jc", echo.getEcho());
         response.close();
     }

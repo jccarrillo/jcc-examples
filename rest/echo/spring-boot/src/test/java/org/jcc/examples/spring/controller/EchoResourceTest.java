@@ -1,7 +1,7 @@
 package org.jcc.examples.spring.controller;
 
+import org.jcc.examples.echo.model.Echo;
 import org.jcc.examples.spring.application.EchoApplication;
-import org.jcc.examples.spring.model.Echo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

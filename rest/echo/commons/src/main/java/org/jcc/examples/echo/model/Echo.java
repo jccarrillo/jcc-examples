@@ -1,4 +1,4 @@
-package org.jcc.examples.jersey.model;
+package org.jcc.examples.echo.model;
 
 public class Echo {
 

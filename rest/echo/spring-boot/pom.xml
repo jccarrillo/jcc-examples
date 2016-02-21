@@ -24,6 +24,11 @@
     </dependencyManagement>
     <dependencies>
         <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+        <dependency>
             <groupId>org.jcc.examples.rest</groupId>
             <artifactId>echo-commons</artifactId>
             <version>1.0-SNAPSHOT</version>

@@ -12,6 +12,7 @@ import static org.jcc.examples.echo.config.UrlPath.PATH_VARIABLE_ECHO;
 import static org.jcc.examples.echo.config.UrlPath.URL_ECHO;
 
 @RestController
+@RequestMapping("/api")
 public class EchoController {
 
     @Inject

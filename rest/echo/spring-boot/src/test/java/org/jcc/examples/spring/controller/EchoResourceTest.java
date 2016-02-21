@@ -31,7 +31,7 @@ public class EchoResourceTest {
         requestHeaders.setContentType(MediaType.APPLICATION_JSON);
 
         String echoThis = "jc";
-        String url = "http://localhost:" + port + "/echo/" + echoThis;
+        String url = "http://localhost:" + port + "/api/echo/" + echoThis;
         Echo echo = restTemplate.getForObject(url, Echo.class);
 
         Assert.assertNotNull(echo);

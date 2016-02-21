@@ -1,15 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.jcc.examples</groupId>
-    <artifactId>build</artifactId>
+    <parent>
+        <groupId>org.jcc.examples.rest</groupId>
+        <artifactId>rest</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>rest-echo</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>JCC Examples</name>
+    <name>JCC Examples - REST - Echo</name>
     <url>http://maven.apache.org</url>
 
     <modules>
-        <module>rest</module>
+        <module>jersey</module>
+        <module>spring-boot</module>
     </modules>
 
     <repositories>

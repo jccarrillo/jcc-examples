@@ -1,0 +1,1 @@
+Main-Class: org.jcc.examples.spring.application.EchoApplication
